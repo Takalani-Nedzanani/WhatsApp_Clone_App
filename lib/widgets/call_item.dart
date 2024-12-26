@@ -4,7 +4,7 @@ class CallItem extends StatelessWidget {
   final String name;
   final String time;
   final IconData callTypeIcon;
-  const CallItem({
+  const CallItem({super.key, 
     required this.name,
     required this.time,
     required this.callTypeIcon,

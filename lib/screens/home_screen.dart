@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/widgets/bottom_navigation_bar.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -28,22 +30,7 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {},
             ),
           ],
-          // bottom: TabBar(
-          //   indicatorColor: const Color.fromARGB(255, 247, 244, 244),
-          //   tabs: [
-          //     Tab(text: "Chats"),
-          //     Tab(text: "Status"),
-          //     Tab(text: "Calls"),
-          //   ],
-          // ),
         ),
-        // body: TabBarView(
-        //   children: [
-        //     ChatScreen(),
-        //     StatusScreen(),
-        //     CallsScreen(),
-        //   ],
-        // ),
         bottomNavigationBar: BottomNavigationBarWidget(),
       ),
     );

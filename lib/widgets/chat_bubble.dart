@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ChatBubble extends StatelessWidget {
   final String message;
   final bool isSentByMe;
-  const ChatBubble({required this.message, required this.isSentByMe});
+  const ChatBubble({super.key, required this.message, required this.isSentByMe});
 
   @override
   Widget build(BuildContext context) {

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class StatusCard extends StatelessWidget {
   final String name;
   final String time;
-  const StatusCard({required this.name, required this.time});
+  const StatusCard({super.key, required this.name, required this.time});
 
   @override
   Widget build(BuildContext context) {

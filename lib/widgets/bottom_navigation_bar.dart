@@ -9,6 +9,7 @@ class BottomNavigationBarWidget extends StatefulWidget {
   const BottomNavigationBarWidget({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _BottomNavigationBarWidgetState createState() =>
       _BottomNavigationBarWidgetState();
 }
