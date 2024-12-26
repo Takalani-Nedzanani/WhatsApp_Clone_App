@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/screens/calls_screen.dart';
 import 'package:whatsapp_clone/screens/chat_screen.dart';
-import 'package:whatsapp_clone/screens/home_screen.dart';
+import 'package:whatsapp_clone/screens/communities.dart';
+
 import 'package:whatsapp_clone/screens/status_screen.dart';
 
 class BottomNavigationBarWidget extends StatefulWidget {
@@ -18,7 +19,7 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
   final List<Widget> _pages = [
     ChatScreen(),
     StatusScreen(),
-    HomeScreen(), // Community placeholder
+    Communities(),
     CallsScreen(),
   ];
 
@@ -33,6 +34,7 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
     return Scaffold(
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color.fromARGB(255, 203, 80, 80),
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
         selectedItemColor: Color(0xFF25D366),

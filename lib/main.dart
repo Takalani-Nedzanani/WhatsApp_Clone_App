@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/widgets/bottom_navigation_bar.dart';
+
 import 'screens/home_screen.dart';
 import 'screens/chat_screen.dart';
 import 'screens/status_screen.dart';
@@ -26,7 +26,7 @@ class WhatsAppClone extends StatelessWidget {
         '/status': (context) => StatusScreen(),
         '/calls': (context) => CallsScreen(),
       },
-      home: BottomNavigationBarWidget(),
+     
     );
   }
 }

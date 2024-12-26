@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
-class ChatScreen extends StatelessWidget {
+class Communities extends StatelessWidget {
+  const Communities({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xFF075E54),
         title: Text(
-          "WhatsApp Clone",
+          "Communities",
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         actions: [
@@ -22,20 +24,6 @@ class ChatScreen extends StatelessWidget {
             onPressed: () {},
           ),
         ],
-      ),
-      body: ListView.builder(
-        itemCount: 10,
-        itemBuilder: (context, index) {
-          return ListTile(
-            leading: CircleAvatar(
-                //backgroundImage: AssetImage('assets/default_profile.png'),
-                ),
-            title: Text("Contact $index"),
-            subtitle: Text("Last message..."),
-            trailing: Text("12:30 PM"),
-            onTap: () {},
-          );
-        },
       ),
     );
   }
